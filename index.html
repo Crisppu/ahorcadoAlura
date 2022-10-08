@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="Logo Alura">
+    </header>
+    <main>
+        <div class="container-btn" id="pantalla-principal">
+            <button class="btn-dark" id="iniciar-juego">Iniciar juego</button>
+            <button class="btn-light" id="agregar-palabra">Agregar nueva palabra</button>
+        </div>
+
+        <div class="oculto" id="palabra-nueva">
+            <textarea class="area-palabra" name="ingresar-palabra" id="textarea" cols="30" rows="10" placeholder="Ingrese una palabra" maxlength="8"></textarea>
+            <div class="info">
+                <img src="img/Vector.png" alt="Icono Informacion">
+                <p>Máx. de 8 letras</p>
+            </div>
+            <div class="ingresar-palabra-btn">
+                <button class="btn-guardar" id="btn-guardar">Guardar y empezar</button>
+                <button class="btn-cancelar" id="btn-cancelar">Cancelar</button>
+            </div>
+        </div>
+        <div id="container-canvas" class="oculto">
+            <canvas id="horca" height="800" width="1200"></canvas>
+            <div class="btn-canvas">
+                <button class="btn-nuevo-juego" id="btn-nuevo-juego">Nuevo juego</button>
+                <button class="btn-desistir" id="btn-desistir">Salir</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/dibujar_horca.js"></script>
+    <script src="js/navegacion.js"></script>
+</body>
+</html>

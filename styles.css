@@ -1,0 +1,246 @@
+body {
+  background-color: #f3f5fc;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.oculto {
+  display: none;
+}
+
+.container-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+}
+
+.btn-dark {
+  min-width: 317px;
+  min-height: 114px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #0a3871;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 38px;
+  cursor: pointer;
+}
+
+.btn-light {
+  min-width: 280px;
+  min-height: 67px;
+  padding: 24px;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  background-color: inherit;
+  font-size: 18px;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+.ingresar-palabra {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  margin-left: 10vw;
+}
+
+.area-palabra {
+  width: 50%;
+  height: 60%;
+  background-color: #f3f5fc;
+  font-size: 32px;
+  border: none;
+  color: #0a3871;
+  resize: none;
+}
+
+.area-palabra::placeholder {
+  color: #0a3871;
+  font-family: "Inter", sans-serif;
+}
+
+.area-palabra:focus {
+  outline: none;
+}
+
+.info {
+  width: 50%;
+  display: flex;
+}
+
+.info > img {
+  margin: 10px 8px 0 0;
+}
+
+.info > p {
+  margin: 10px 0 0 0;
+  color: #495057;
+  opacity: 80%;
+}
+
+.ingresar-palabra-btn {
+  display: flex;
+  min-width: 50%;
+  margin-top: 16px;
+}
+
+.btn-guardar {
+  min-width: 332px;
+  min-height: 67px;
+  padding: 24px;
+  background-color: #0a3871;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.btn-cancelar {
+  min-width: 332px;
+  min-height: 67px;
+  padding: 24px;
+  background-color: inherit;
+  font-size: 16px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+}
+
+#horca {
+  display: block;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  padding-right: 300px;
+}
+
+.btn-canvas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.btn-nuevo-juego {
+  min-width: 332px;
+  min-height: 67px;
+  padding: 24px;
+  background-color: #0a3871;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.btn-desistir {
+  min-width: 332px;
+  min-height: 67px;
+  padding: 24px;
+  background-color: inherit;
+  font-size: 16px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+/* Estilo en tablet */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-y: hidden;
+  }
+
+  header {
+    top: 75px;
+    left: 0px;
+  }
+
+  .ingresar-palabra {
+    margin-top: 15vh;
+    align-items: flex-start;
+    margin-left: 6vw;
+  }
+
+  .btn-canvas{
+      position: absolute;
+      bottom: 1rem;
+  }
+
+  #horca{
+      height: 700px;
+      padding-right: 180px
+  }
+}
+
+/* Estilos en mobile */
+
+@media screen and (max-width: 375px) {
+    body {
+        overflow-y: auto; 
+    }
+
+  header {
+    top: 24px;
+    left: -15px;
+  }
+
+  .btn-canvas{
+      position: relative;
+      bottom: 0;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #container-canvas{
+      margin-bottom: 1rem;
+  }
+
+  .btn-nuevo-juego{
+      margin: 0 0 1rem 0;
+  }
+
+  #horca{
+      margin-left: -35px;
+      padding-right: 0px;
+      width: 100%;
+  }
+
+  .area-palabra {
+    width: 100%;
+  }
+
+  .ingresar-palabra-btn {
+    flex-wrap: wrap;
+  }
+
+  .btn-guardar {
+    margin-bottom: 24px;
+  }
+}
